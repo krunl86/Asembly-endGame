@@ -1,0 +1,198 @@
+*{
+  margin: 0px;
+  
+
+}
+
+body {
+  background-color: #262626;
+  color: #D9D9D9;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-family: 'Arial', sans-serif;
+} 
+header{
+  text-align: center;
+}
+
+header>h1{
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #f9f4da;
+}
+header>p{
+  font-size: 1.2em;
+  color: white;
+  margin-top: 10px;
+} 
+section.status-container{
+  
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 60%;
+  margin: 50px auto;
+
+}
+section.status-container.game-won{
+  background-color: #4CAF50;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 60%;
+  margin: 50px auto;
+
+}
+section.status-container.game-lost{
+  background-color: #f44336;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 60%;
+  margin: 50px auto;
+
+}
+section.status-container.hidden{
+  visibility: hidden;
+  background-color: #262626;
+}
+section.status-container.in-progress {
+ background-color: blue;
+  padding: 20px;
+  color: #262626;
+  border-radius: 10px;
+  text-align: center;
+  width: 60%;
+  margin: 50px auto;
+}
+
+section.status-container>h2{
+  font-size: 2em;
+  color: white;
+
+  margin-bottom: 10px;
+}
+section.status-container>p{    
+  font-size: 1.2em;
+  color: #D9D9D9;
+}   
+
+.chips-list{
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto auto;
+  gap: 10px;
+  width: 450px;
+  justify-content: center;
+  
+
+}
+span.chip{
+  padding: 10px 20px;
+  border-radius: 5px;
+  
+  
+}
+span.chip.lost {
+  position: relative;
+  
+}
+span.chip.lost::before{
+  border-radius: 5px;
+  content: "💀";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0 ;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+
+}
+
+section.word{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+section.word > span{
+  background-color: #333333;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #D9D9D9 solid 2px;
+
+}
+
+section.word > span.missed-letter{
+  color: red;
+  
+
+}
+
+section.keyboard{
+  margin: 50px auto;
+  display:  flex;
+  flex-wrap: wrap;
+  gap: 10px ;
+  width: 450px;
+}
+
+section.keyboard > button{
+  background-color: yellow;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+section.keyboard > button.correct{
+  background-color: #4CAF50;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.keyboard > button.wrong{
+  background-color: #f44336;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.keyboard > button::disabled{
+ opacity: 0.5;
+ cursor: not-allowed;
+}
+
+
+
+button.new-game{
+  display: block  ;
+  width: 200px;
+  margin: auto  auto;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  padding: 10px; 
+  border-radius: 20px;
+}
